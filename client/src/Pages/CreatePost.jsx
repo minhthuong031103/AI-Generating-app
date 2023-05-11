@@ -14,9 +14,14 @@ export default function CreatePost() {
   const generateImage = function () {};
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
-  const handleSubmit = function () {};
-  const handleChange = function () {};
-  const handleSurpriseMe = function () {};
+  const handleSubmit = function (e) {};
+  const handleChange = function (e) {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+  const handleSurpriseMe = function () {
+    const randomPrompt = getRandomPrompt(form.prompt);
+    setForm({ ...form, prompt: randomPrompt });
+  };
 
   return (
     <section
