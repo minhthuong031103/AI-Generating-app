@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://aigeneratingapp.onrender.com/';
+axios.defaults.baseURL = 'https://aigeneratingapp.onrender.com';
 
 export async function createPost(form) {
   try {
