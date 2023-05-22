@@ -3,9 +3,9 @@ import * as dotenv from 'dotenv';
 
 import { v2 as cloudinary } from 'cloudinary';
 import Post from '../mongodb/models/post.js';
-
+import multer from 'multer';
 dotenv.config();
-
+const upload = multer({ limits: { fileSize: 10 * 1024 * 1024 } });
 const router = express.Router();
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

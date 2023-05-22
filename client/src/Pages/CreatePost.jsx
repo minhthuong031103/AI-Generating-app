@@ -89,9 +89,17 @@ export default function CreatePost() {
     >
       <Toaster position="top-center" reverseOrder={false}></Toaster>
       <div>
-        <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
+        <h1 className="font-extrabold text-[#222328] text-[32px]">
+          Generate image with Stable Diffusion
+        </h1>
         <p className="mt-2 text-[#666e75] text-[16px] max-w[500px] ">
-          Tạo prompt và generate ảnh
+          Stable Diffusion is designed to generate high-quality images by
+          applying the diffusion model, which is a powerful image synthesis
+          technique. This model utilizes a process called iterative diffusion,
+          where it starts with a noisy image and progressively refines it to
+          generate visually appealing and coherent images. Stable Diffusion v1.5
+          aims to offer an accessible and user-friendly way to leverage the
+          capabilities of the diffusion model for image generation tasks.
         </p>
       </div>
       <form className="mt-16 max-w-3xl">
