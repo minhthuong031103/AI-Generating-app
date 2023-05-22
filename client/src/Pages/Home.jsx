@@ -27,7 +27,7 @@ export default function Home() {
     setLoading(true);
     try {
       const response = await fetch(
-        'https://ai-generating-app-server.vercel.app/api/v1/post/',
+        'https://aigeneratingapp.onrender.com//api/v1/post/',
         {
           method: 'GET',
           headers: {
