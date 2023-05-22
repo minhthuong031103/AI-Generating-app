@@ -74,15 +74,18 @@ export default function Home() {
         </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Hehe vì a biết là gặp em hơi khó vì mấy ngày tới em bận đi sinh nhật
-          nữa nên là anh tặng em cái web này. Mấy này đều là ảnh anh lưu lại á,
-          bất cứ bức hình nào em gửi anh hay của em anh cũng đều rất thích. Cái
-          quỷ này là anh tự nghĩ ra á heheheheh =))) Anh mong là bước qua tuổi
-          mới em sẽ vui vẻ hơn, tìm được những mối quan hệ lành mạnh mới, yêu
-          bản thân của mình nhiều hơn, và yêu mẹ nhiều hơn nữa, anh biết nhiều
-          khi em có những nỗi buồn riêng nhưng mà đừng lúc nào cũng cố chịu đựng
-          một mình nha. Đôi lúc anh hơi bận nhưng mà anh chỉ thích nói chuyện
-          với một mình Tuyết Nhi thôi. Tính anh hổng có thích nói nhiều nên là
-          tới đây thôi nha hj =]]
+          nữa nên là anh tặng em cái web này. (Dcm loay hay cả ngày trời đó
+          huhu) Mấy này đều là ảnh anh lưu lại á, bất cứ bức hình nào em gửi anh
+          hay của em anh cũng đều rất thích. Cái quỷ này là anh tự nghĩ ra á
+          heheheheh =))) Anh mong là bước qua tuổi mới em sẽ vui vẻ hơn, tìm
+          được những mối quan hệ lành mạnh mới, yêu bản thân của mình nhiều hơn,
+          và yêu mẹ nhiều hơn nữa nha, mẹ thương em nhiều lắm đó và anh cũng tin
+          là ngược lại, anh biết nhiều khi em có những nỗi buồn riêng nhưng mà
+          đừng lúc nào cũng cố chịu đựng một mình nha. Không biết từ lúc nào mà
+          mỗi sáng thức dậy người đầu tiên anh nghĩ đến là em, trước khi nhắm
+          mắt ngủ cũng là em, lúc làm việc cũng là em =))))) Đôi lúc anh hơi bận
+          nhưng mà anh chỉ thích nói chuyện với một mình Tuyết Nhi thôi. Tính
+          anh hổng có thích nói nhiều nên là tới đây thôi nha hj =]]
           <br />
           Chúc em sinh nhật vui vẻ, love u.
           <br />
