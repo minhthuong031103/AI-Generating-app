@@ -74,19 +74,31 @@ export default function Home() {
         </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Hehe vì a biết là gặp em hơi khó vì mấy ngày tới em bận đi sinh nhật
-          nữa nên là
-          <br>
-            anh tặng em cái web này. Mấy này đều là ảnh anh lưu lại á, bất cứ
-            bức hình nào em gửi anh hay của em anh cũng đều rất thích
-          </br>
+          nữa nên là anh tặng em cái web này. Mấy này đều là ảnh anh lưu lại á,
+          bất cứ bức hình nào em gửi anh hay của em anh cũng đều rất thích. Cái
+          quỷ này là anh tự nghĩ ra á heheheheh =))) Anh mong là bước qua tuổi
+          mới em sẽ vui vẻ hơn, tìm được những mối quan hệ lành mạnh mới, yêu
+          bản thân của mình nhiều hơn, và yêu mẹ nhiều hơn nữa, anh biết nhiều
+          khi em có những nỗi buồn riêng nhưng mà đừng lúc nào cũng cố chịu đựng
+          một mình nha. Đôi lúc anh hơi bận nhưng mà anh chỉ thích nói chuyện
+          với một mình Tuyết Nhi thôi. Tính anh hổng có thích nói nhiều nên là
+          tới đây thôi nha hj =]]
+          <br />
+          Chúc em sinh nhật vui vẻ, love u.
+          <br />
+          <br />
+          <br />
+          (Khi nào được gặp em thì anh sẽ có quà khác sau nha :)) ) Em có thể
+          nhấn vào từng ảnh là sẽ có chú thích của anh á, và có thể down về luôn
+          nữa =))))
         </p>
       </div>
       <div className="mt-16">
         <FormField
-          labelName="Search posts"
+          labelName="Tìm kiếm"
           type="text"
           name="text"
-          placeholder="Search something..."
+          placeholder="Gõ linh tinh vô đây =))..."
           value={searchText}
           handleChange={handleSearchChange}
         />

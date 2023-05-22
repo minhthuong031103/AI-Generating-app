@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
-import { logo } from './assets';
+import { logo1 } from './assets';
 import Home from './Pages/Home';
 import CreatePost from './Pages/CreatePost';
 import CreatePostLexica from './Pages/CreatePostLexica';
@@ -15,10 +15,10 @@ const App = function () {
       border-b-[#e6ebf4]"
       >
         <Link to="/">
-          <img src={logo} alt="logo" className="w-28 object-contain"></img>
+          <img src={logo1} alt="logo" className="w-28 object-contain"></img>
         </Link>
         <div className="flex items-center">
-          <Link
+          {/* <Link
             to="/create-post-lexica"
             className="font-inter font-medium bg-[#1D267D] text-white px-4 py-2 rounded-md"
           >
@@ -30,7 +30,7 @@ const App = function () {
             className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md ml-4"
           >
             Stable Diffusion
-          </Link>
+          </Link> */}
           <Link
             to="/upload"
             className="font-inter font-medium bg-[#F2BED1] text-white px-4 py-2 rounded-md ml-4"

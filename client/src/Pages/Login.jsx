@@ -1,4 +1,4 @@
-import { cover } from '../assets';
+import { bg } from '../assets';
 
 export default function Login() {
   return (
@@ -10,7 +10,7 @@ export default function Login() {
           </h1>
           <p className="text-xl text-white font-normal">Let's get started</p>
         </div>
-        <img src={cover} className="w-full h-full object-cover"></img>
+        <img src={bg} className="w-full h-full object-cover"></img>
       </div>
       <div className="w-1/2 h-full bg-[#f5f5f5f5] flex flex-col p-20 justify-between">
         <h1 className="text-xl text-[#060606] font-semibold">Generative AI</h1>
