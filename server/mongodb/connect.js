@@ -1,19 +1,15 @@
-import { MongoClient } from 'mongodb';
+import mongoose from 'mongoose';
 
 const connectDB = async function (url) {
-  const client = new MongoClient(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  mongoose.set('strictQuery', true);
 
-  try {
-    // Connect to the MongoDB server
-    await client.connect();
-    console.log('Connected to MongoDB');
-
-    // You can perform database operations here
-  } catch (error) {
-    console.error('Failed to connect to MongoDB', error);
-  }
+  mongoose
+    .connect(url)
+    .then(function () {
+      console.log('MongoDB connected');
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 };
 export default connectDB;
