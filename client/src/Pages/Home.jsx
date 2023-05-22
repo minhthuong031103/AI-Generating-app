@@ -27,7 +27,7 @@ export default function Home() {
     setLoading(true);
     try {
       const response = await fetch(
-        'https://aigeneratingapp.onrender.com//api/v1/post/all',
+        'aigeneratingapp.onrender.com//api/v1/post/all',
         {
           method: 'GET',
           headers: {
