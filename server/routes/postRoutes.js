@@ -17,6 +17,7 @@ router.route('/all').get(async function (req, res) {
     const posts = await Post.find({});
     res.status(200).json({ success: true, data: posts });
   } catch (error) {
+    console.log(error);
     res.status(500).send({ success: false, message: error });
   }
 });
