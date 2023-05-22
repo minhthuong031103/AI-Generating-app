@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
-import { logo1 } from './assets';
+import { logo } from './assets';
 import Home from './Pages/Home';
 import CreatePost from './Pages/CreatePost';
 import CreatePostLexica from './Pages/CreatePostLexica';
@@ -15,7 +15,7 @@ const App = function () {
       border-b-[#e6ebf4]"
       >
         <Link to="/">
-          <img src={logo1} alt="logo" className="w-28 object-contain"></img>
+          <img src={logo} alt="logo" className="w-28 object-contain"></img>
         </Link>
         <div className="flex items-center">
           <Link
