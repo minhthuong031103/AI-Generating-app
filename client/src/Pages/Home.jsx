@@ -72,7 +72,7 @@ export default function Home() {
         <h1 className="font-extrabold text-[#222328] text-[32px]">
           Happy birthday Tuyết Nhi!!!!!!!
         </h1>
-        {/* <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
+        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Hehe vì a biết là gặp em hơi khó vì mấy ngày tới em bận đi sinh nhật
           nữa nên là anh tặng em cái web này. (Dcm loay hay cả ngày trời đó
           huhu) Mấy này đều là ảnh anh lưu lại á, bất cứ bức hình nào em gửi anh
@@ -101,7 +101,7 @@ export default function Home() {
           dưới là món quà nho nhỏ a tặng em nha, nhma khi nào gặp thì anh đưa há
           cái này em mà không lấy là anh ko có tặng cho ai được hết đó =))))))
           nên là phải lấy nha hi
-        </p> */}
+        </p>
       </div>
       <div className="mt-16">
         <FormField
