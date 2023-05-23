@@ -94,6 +94,13 @@ export default function Home() {
           (Khi nào được gặp em thì anh sẽ có quà khác sau nha :)) ) Em có thể
           nhấn vào từng ảnh là sẽ có chú thích của anh á, và có thể down về luôn
           nữa =))))
+          <br />
+          <br />
+          <br />
+          Hé nhô bé, nay đúng 00:00 24/5, anh chúc mừng sinh nhật em ạ =)))) Bên
+          dưới là món quà nho nhỏ a tặng em nha, nhma khi nào gặp thì anh đưa há
+          cái này em mà không lấy là anh ko có tặng cho ai được hết đó =))))))
+          nên là phải lấy nha hi
         </p>
       </div>
       <div className="mt-16">

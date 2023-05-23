@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import Upload from './Pages/Upload';
 import Register from './Pages/Register';
 import Forgot from './Pages/Forgot';
+import { AuthorizedUser, LoggedUser } from './authenticate';
 const App = function () {
   return (
     <BrowserRouter>
@@ -49,8 +50,15 @@ const App = function () {
       </header>
       <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
         <Routes>
-          <Route path="/" element={<Home></Home>} />
-          <Route path="/" element={<Home></Home>} />
+          <Route
+            path="/"
+            element={
+              <AuthorizedUser>
+                <Home></Home>
+              </AuthorizedUser>
+            }
+          />
+
           <Route path="/create-post" element={<CreatePost></CreatePost>} />
           <Route
             path="/create-post-lexica"

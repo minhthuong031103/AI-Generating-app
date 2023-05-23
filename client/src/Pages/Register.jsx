@@ -62,13 +62,16 @@ export default function Register() {
           toast.error('Password does not match!');
           return 0;
         }
-        let createPromise = await registerUser(values);
-        createPromise.then(function (res) {
+        var exist = 0;
+        let createPromise = registerUser(values);
+        await createPromise.then(function (res) {
+          console.log(res);
           if (res === 'Email exist') {
             toast.error('Email existed!');
-            return 0;
+            exist = 1;
           }
         });
+        if (exist) return 0;
         await toast.promise(createPromise, {
           loading: 'Registering...',
           success: <b>Register Successfully!</b>,
