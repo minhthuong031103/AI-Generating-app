@@ -15,3 +15,14 @@ export async function createPost(form) {
     return Promise.reject(error);
   }
 }
+export async function registerUser(user) {
+  try {
+    const { data, status } = await axios.post('/api/user/createaccount', user);
+
+    //send email
+    if (status === 502) return PromiseRejectionEvent.resolve('Email exist');
+    return Promise.resolve(data);
+  } catch (error) {
+    console.log(error);
+  }
+}

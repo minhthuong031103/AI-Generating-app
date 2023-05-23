@@ -6,6 +6,8 @@ import CreatePost from './Pages/CreatePost';
 import CreatePostLexica from './Pages/CreatePostLexica';
 import Login from './Pages/Login';
 import Upload from './Pages/Upload';
+import Register from './Pages/Register';
+import Forgot from './Pages/Forgot';
 const App = function () {
   return (
     <BrowserRouter>
@@ -48,13 +50,15 @@ const App = function () {
       <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
         <Routes>
           <Route path="/" element={<Home></Home>} />
-
+          <Route path="/" element={<Home></Home>} />
           <Route path="/create-post" element={<CreatePost></CreatePost>} />
           <Route
             path="/create-post-lexica"
             element={<CreatePostLexica></CreatePostLexica>}
           />
           <Route path="/login" element={<Login></Login>} />
+          <Route path="/register" element={<Register></Register>} />
+          <Route path="/login/forgot" element={<Forgot></Forgot>} />
           <Route path="/upload" element={<Upload></Upload>} />
         </Routes>
       </main>

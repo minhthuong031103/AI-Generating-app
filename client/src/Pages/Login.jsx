@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import { bg } from '../assets';
 
 export default function Login() {
   return (
-    <div className="w-full h-screen flex items-start">
-      <div className="relative w-1/2 h-full flex flex-col">
+    <div className="w-full bg-[#f5f5f5f5] h-screen flex items-start">
+      <div className="relative w-1/2 h-full flex flex-col hidden sm:block ">
         <div className="absolute top-[20%] left-[10%] flex flex-col">
           <h1 className="text-4xl text-white font-normal">
             Turn Your Ideas into reality
@@ -11,8 +12,8 @@ export default function Login() {
           <p className="text-xl text-white font-normal">Let's get started</p>
         </div>
         <img src={bg} className="w-full h-full object-cover"></img>
-      </div>
-      <div className="w-1/2 h-full bg-[#f5f5f5f5] flex flex-col p-20 justify-between">
+      </div>{' '}
+      <div className="w-full sm:w-3/4 h-full flex flex-col p-20 justify-between">
         <h1 className="text-xl text-[#060606] font-semibold">Generative AI</h1>
         <div className="w-full flex flex-col">
           <div className="w-full flex flex-col mb-2">
@@ -35,19 +36,28 @@ export default function Login() {
           <div className="w-full flex items-center justify-between">
             <div className="w-full flex">
               <p className="text-sm font-medium whitespace-nowrap cursor-pointer underline underline-offset-2">
-                Forgot Password?
+                <Link to="forgot"> Forgot Password?</Link>
               </p>
             </div>
           </div>
         </div>
-
-        <div className="w-full flex items-center justify-center">
-          <p className="text-sm font-normal text-[#060606]">
-            Dont have account?{' '}
-            <span className="font-semibold underline underline-offset-2 cursor-pointer">
-              Sign up for free
-            </span>
-          </p>
+        <div className="w-full flex flex-col my-4">
+          <button
+            className="w-full text-white my-2 bg-[#060606] 
+          rounded-md p-4 text-center
+           flex items-center justify-center"
+          >
+            Log in
+          </button>
+          <Link to={'/register'}>
+            <button
+              className="w-full text-[#060606] my-2 bg-white border-2 border-black 
+          rounded-md p-4 text-center
+           flex items-center justify-center"
+            >
+              Register
+            </button>
+          </Link>
         </div>
       </div>
     </div>

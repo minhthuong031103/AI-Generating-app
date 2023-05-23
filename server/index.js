@@ -6,6 +6,7 @@ import bodyParser from 'body-parser';
 import postRoutes from './routes/postRoutes.js';
 import AIRoutes from './routes/AIRoutes.js';
 import multer from 'multer';
+import userRoutes from './routes/userRoute.js';
 dotenv.config();
 
 const app = express();
@@ -15,7 +16,7 @@ app.use(express.json({ limit: '50mb' }));
 
 app.use('/api/v1/post', postRoutes);
 app.use('/api/v1/dalle', AIRoutes);
-
+app.use('/api/user', userRoutes);
 app.get('/', async function (req, res) {
   return res.send('hello world');
 });
