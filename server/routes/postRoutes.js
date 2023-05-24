@@ -24,12 +24,20 @@ router.route('/all').get(async function (req, res) {
 
 router.route('/').post(async function (req, res) {
   try {
-    const { name, prompt, photo } = req.body;
-    const photoUrl = await cloudinary.uploader.upload(photo);
+    const { name, prompt, photo, date } = req.body;
+    var photoUrl = '';
+    if (photo) {
+      photoUrl = await cloudinary.uploader.upload(photo);
+    } else {
+      photoUrl =
+        'http://bdbackgrounds.com/media/zoo/images/1-lightyellow-paper_7aebeb667bb535ad797b057b7234cfb9.jpg';
+    }
+
     const newPost = await Post.create({
       name,
       prompt,
       photo: photoUrl.url,
+      date,
     })
       .then(function () {
         res.status(200).send({ success: true });

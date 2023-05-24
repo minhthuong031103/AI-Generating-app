@@ -9,48 +9,6 @@ dotenv.config();
 
 const router = express.Router();
 
-export async function login(req, res) {
-  const { email, password } = req.body;
-
-  try {
-    UserModel.findOne({ email })
-      .then(function (user) {
-        console.log(1);
-        bcrypt
-          .compare(password, user.password)
-          .then(function (passwordCheck) {
-            console.log(passwordCheck);
-            if (!passwordCheck) return res.status(402).send('wrong!');
-
-            //create JWT TOKEN
-            const token = jwt.sign(
-              {
-                userId: user._id,
-                email: user.email,
-              },
-              'WNi3oF3NfduzvwUiOPlnDdUUjIlMcv7fX28ms3udpPM',
-
-              { expiresIn: '24h' }
-            );
-            return res.status(200).send({
-              msg: 'Login Successfully',
-              _id: user._id,
-              token,
-            });
-          })
-          .catch(function (error) {
-            console.log(error);
-            return res.status(401).send('Password is not correct');
-          });
-      })
-      .catch(function (error) {
-        return res.status(409).send('email not found');
-      });
-  } catch (error) {
-    return res.status(500).send({ error });
-  }
-}
-
 router.route('/login').post(async function (req, res) {
   try {
     const { email, password } = req.body;
