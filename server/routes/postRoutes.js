@@ -26,7 +26,7 @@ router.route('/allofuser').post(async function (req, res) {
 
 router.route('/upload').post(async function (req, res) {
   try {
-    const { name, prompt, photo, date } = req.body;
+    const { name, prompt, photo, date, _userid } = req.body;
     var photoUrl = '';
     if (photo) {
       photoUrl = await cloudinary.uploader.upload(photo);
@@ -40,6 +40,7 @@ router.route('/upload').post(async function (req, res) {
       prompt,
       photo: photoUrl.url,
       date,
+      _userid: _userid,
     })
       .then(function () {
         res.status(200).send({ success: true });
