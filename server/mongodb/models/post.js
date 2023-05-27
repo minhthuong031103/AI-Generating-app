@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 
 const Post = new mongoose.Schema({
-  name: { type: String, requied: true },
-  prompt: { type: String, required: true },
+  name: { type: String },
+  prompt: { type: String },
   photo: {
     type: String,
     default:
