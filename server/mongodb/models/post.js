@@ -11,6 +11,7 @@ const Post = new mongoose.Schema({
   date: {
     type: String,
   },
+  _userid: { type: String },
 });
 const PostSchema = mongoose.model('Post', Post);
 export default PostSchema;

@@ -127,8 +127,6 @@ export default function Upload() {
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <input type="file" accept="image/*" onChange={handleImageUpload} />
-
           <div
             className="relative bg-gray-50 border border-gray-300
           text-gray-900 text-sm rounded-lg focus:ring-blue-500 

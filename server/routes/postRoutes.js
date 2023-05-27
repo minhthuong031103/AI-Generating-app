@@ -12,9 +12,10 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-router.route('/all').get(async function (req, res) {
+router.route('/allofuser').get(async function (req, res) {
   try {
-    const posts = await Post.find({});
+    const { _id } = req.body;
+    const posts = await Post.find({ _userid: _id });
     res.status(200).json({ success: true, data: posts });
   } catch (error) {
     console.log(error);
@@ -22,7 +23,7 @@ router.route('/all').get(async function (req, res) {
   }
 });
 
-router.route('/').post(async function (req, res) {
+router.route('/upload').post(async function (req, res) {
   try {
     const { name, prompt, photo, date } = req.body;
     var photoUrl = '';
