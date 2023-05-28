@@ -6,7 +6,7 @@ const Post = new mongoose.Schema({
   photo: {
     type: String,
     default:
-      'http://bdbackgrounds.com/media/zoo/images/1-lightyellow-paper_7aebeb667bb535ad797b057b7234cfb9.jpg',
+      'https://res.cloudinary.com/dci8dhaps/image/upload/v1685243026/light-yellow-background_dvdrwo.jpg',
   },
   date: {
     type: String,
