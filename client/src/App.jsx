@@ -21,7 +21,7 @@ const App = function () {
           <img src={logo1} alt="logo" className="w-28 object-contain"></img>
         </Link>
         <div className="flex items-center">
-          <Link
+          {/* <Link
             to="/create-post-lexica"
             className="font-inter font-medium bg-[#1D267D] text-white px-4 py-2 rounded-md"
           >
@@ -33,7 +33,7 @@ const App = function () {
             className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md ml-4"
           >
             Stable Diffusion
-          </Link>
+          </Link> */}
           <Link
             to="/upload"
             className="font-inter font-medium bg-[#F2BED1] text-white px-4 py-2 rounded-md ml-4"
@@ -53,9 +53,9 @@ const App = function () {
           <Route
             path="/"
             element={
-              <AuthorizedUser>
-                <Home></Home>
-              </AuthorizedUser>
+              // <AuthorizedUser>
+              <Home></Home>
+              // </AuthorizedUser>
             }
           />
 
