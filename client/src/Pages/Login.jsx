@@ -74,17 +74,9 @@ export default function Login() {
   return (
     <>
       <Toaster position="top-center" reverseOrder={false}></Toaster>
-      <div className="relative w-full h-full flex flex-col  ">
-        <div className="absolute top-[20%] left-[10%] flex flex-col">
-          <h1 className="text-4xl text-white font-normal">
-            Sinh nhật Tuyết Nhi
-          </h1>
-          <p className="text-xl text-white font-normal">heheheh</p>
-        </div>
-        <img src={bg} className="w-full h-full object-cover"></img>
-      </div>{' '}
+
       <div className="w-full bg-[#f5f5f5f5] h-screen flex items-start">
-        {/* <div className="relative w-1/2 h-full flex flex-col hidden sm:block ">
+        <div className="relative w-1/2 h-full flex flex-col hidden sm:block ">
           <div className="absolute top-[20%] left-[10%] flex flex-col">
             <h1 className="text-4xl text-white font-normal">
               Turn Your Ideas into reality
@@ -92,7 +84,7 @@ export default function Login() {
             <p className="text-xl text-white font-normal">Let's get started</p>
           </div>
           <img src={bg} className="w-full h-full object-cover"></img>
-        </div>{' '} */}
+        </div>{' '}
         <div className="w-full sm:w-3/4 h-full flex flex-col p-20 justify-between">
           <h1 className="text-xl text-[#060606] font-semibold">
             Web này của mthuong
@@ -101,10 +93,7 @@ export default function Login() {
             <div className="w-full flex flex-col mb-2">
               <h3 className="text-2xl font-semibold mb-2">Login</h3>
               <p className="text-base mb-2">
-                {/* Welcome! Please enter your details */}
-                Tài khoản là tuyetnhicute@gmail.com <br />
-                Mật khẩu là sinh nhật của TN và của MT (đoán xem =)))))) Nhập
-                sai là hok vô dc đâu chỉ có tui với TN biết thoi
+                Welcome! Please enter your details
               </p>
             </div>
             <form onSubmit={formik.handleSubmit}>
